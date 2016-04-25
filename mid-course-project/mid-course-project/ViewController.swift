@@ -52,6 +52,13 @@ class ViewController: UIViewController {
     myCalc.setOperation("-")
   }
   
+  @IBAction func buttonTimes(sender: AnyObject) {
+    myCalc.setOperation("*")
+  }
+  
+  @IBAction func button4(sender: AnyObject) {
+    display(myCalc.addNumber(Double(4)))
+  }
   
   @IBAction func buttonEquals(sender: AnyObject) {
     display(myCalc.process())

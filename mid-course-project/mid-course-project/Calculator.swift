@@ -81,6 +81,12 @@ class Calculator {
     case "-":
       currentTotal = currentNumber! - currentNumber2!
       currentNumber = currentTotal
+    case "*":
+      currentTotal = currentNumber! * currentNumber2!
+      currentNumber = currentTotal
+    case "/":
+      currentTotal = currentNumber! / currentNumber2!
+      currentNumber = currentTotal
     default:
         currentTotal = currentNumber!
     }
