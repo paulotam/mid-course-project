@@ -50,30 +50,48 @@ class Calculator {
       currentNumber2 = setValue(currentNumber2!, additionalDigit: value!)
       currentString = forTailingZero(currentNumber2!)
     }
+    
+    print("Value1 : \(currentNumber) \(currentOperation) Value2 : \(currentNumber2)  ")
     return currentString
   }
   
   func setValue(currentDigit: Double, additionalDigit: Double) -> Double {
+    
     var returnDigit: Double = 0
     if currentDigit == 0 {
       returnDigit = additionalDigit
     } else if currentNumber > 0 {
       returnDigit = (currentDigit * 10 ) + additionalDigit
     }
+    
+    print("setting: \(additionalDigit) to \(currentDigit) to make \(returnDigit) ")
+    
     return returnDigit
   }
   
-  func setOperation(operation: String) {
+  func setOperation(operation: String) -> String {
+    print("Current: \(currentOperation) New: \(operation)")
     if currentOperation == "" {
       currentOperation = operation
+    } else if currentOperation == operation {
+      process()
+      currentNumber2 = 0
+      currentString = forTailingZero(currentTotal)
+      
     } else {
       //do action then
-      currentNumber2 = 0
-      currentOperation = operation
+      //process()
+      //currentNumber2 = 0
+      //currentOperation = operation
+      //currentString = forTailingZero(currentTotal)
+
     }
+    print("Value1 : \(currentNumber) \(currentOperation) Value2 : \(currentNumber2)  ")
+    return currentString
   }
   
   func process() -> String {
+    print("Value1 : \(currentNumber) \(currentOperation) Value2 : \(currentNumber2)  ")
     switch currentOperation {
     case "+":
       currentTotal = currentNumber! + currentNumber2!
@@ -90,6 +108,8 @@ class Calculator {
     default:
         currentTotal = currentNumber!
     }
+    print("Totals: \(currentTotal) ")
+    print("Value1 : \(currentNumber) \(currentOperation) Value2 : \(currentNumber2)  ")
     currentString = forTailingZero(currentTotal)
     return currentString
   }

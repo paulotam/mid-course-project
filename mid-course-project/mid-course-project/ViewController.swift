@@ -41,23 +41,47 @@ class ViewController: UIViewController {
     display(myCalc.addNumber(Double(3)))
   }
   
+  @IBAction func button4(sender: AnyObject) {
+    display(myCalc.addNumber(Double(4)))
+  }
+
+  @IBAction func button5(sender: AnyObject) {
+    display(myCalc.addNumber(Double(5)))
+  }
+
+  @IBAction func button6(sender: AnyObject) {
+    display(myCalc.addNumber(Double(6)))
+  }
+
+  @IBAction func button7(sender: AnyObject) {
+    display(myCalc.addNumber(Double(7)))
+  }
+  
+  @IBAction func button8(sender: AnyObject) {
+    display(myCalc.addNumber(Double(8)))
+  }
+
+  @IBAction func button9(sender: AnyObject) {
+    display(myCalc.addNumber(Double(9)))
+  }
+  
   @IBAction func buttonDot(sender: AnyObject) {
   }
   
   @IBAction func buttonPlus(sender: AnyObject) {
-    myCalc.setOperation("+")
+    display(myCalc.setOperation("+"))
   }
   
   @IBAction func buttonMinus(sender: AnyObject) {
-    myCalc.setOperation("-")
+    display(myCalc.setOperation("-"))
   }
   
   @IBAction func buttonTimes(sender: AnyObject) {
-    myCalc.setOperation("*")
+    display(myCalc.setOperation("*"))
   }
   
-  @IBAction func button4(sender: AnyObject) {
-    display(myCalc.addNumber(Double(4)))
+  @IBAction func buttonDivision(sender: AnyObject) {
+    display(myCalc.setOperation("/"))
   }
   
   @IBAction func buttonEquals(sender: AnyObject) {

@@ -138,6 +138,7 @@
 				1C7A6D611CCE2CF100441784 /* Sources */,
 				1C7A6D621CCE2CF100441784 /* Frameworks */,
 				1C7A6D631CCE2CF100441784 /* Resources */,
+				1C660AC01CD0D04600273723 /* swiftLint */,
 			);
 			buildRules = (
 			);
@@ -253,6 +254,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C660AC01CD0D04600273723 /* swiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = swiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C7A6D611CCE2CF100441784 /* Sources */ = {
@@ -488,6 +506,7 @@
 				1C7A6D8F1CCE2CF100441784 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C7A6D901CCE2CF100441784 /* Build configuration list for PBXNativeTarget "mid-course-projectTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +515,7 @@
 				1C7A6D921CCE2CF100441784 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C7A6D931CCE2CF100441784 /* Build configuration list for PBXNativeTarget "mid-course-projectUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +524,7 @@
 				1C7A6D951CCE2CF100441784 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
