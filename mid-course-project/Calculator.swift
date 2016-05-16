@@ -8,7 +8,7 @@
 
 class Calculator {
 
-  var currentString: String
+  private var currentString: String
   var currentNumber: Double?
   var currentNumber2: Double?
   var currentOperation = ""

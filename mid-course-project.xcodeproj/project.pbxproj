@@ -12,8 +12,6 @@
 		1C7A6D6E1CCE2CF100441784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C7A6D6C1CCE2CF100441784 /* Main.storyboard */; };
 		1C7A6D701CCE2CF100441784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C7A6D6F1CCE2CF100441784 /* Assets.xcassets */; };
 		1C7A6D731CCE2CF100441784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C7A6D711CCE2CF100441784 /* LaunchScreen.storyboard */; };
-		1C7A6D7E1CCE2CF100441784 /* mid_course_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7A6D7D1CCE2CF100441784 /* mid_course_projectTests.swift */; };
-		1C7A6D891CCE2CF100441784 /* mid_course_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7A6D881CCE2CF100441784 /* mid_course_projectUITests.swift */; };
 		1C7A6D971CCE334200441784 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7A6D961CCE334200441784 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,11 +41,7 @@
 		1C7A6D721CCE2CF100441784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C7A6D741CCE2CF100441784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C7A6D791CCE2CF100441784 /* mid-course-projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mid-course-projectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C7A6D7D1CCE2CF100441784 /* mid_course_projectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mid_course_projectTests.swift; sourceTree = "<group>"; };
-		1C7A6D7F1CCE2CF100441784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C7A6D841CCE2CF100441784 /* mid-course-projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mid-course-projectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C7A6D881CCE2CF100441784 /* mid_course_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mid_course_projectUITests.swift; sourceTree = "<group>"; };
-		1C7A6D8A1CCE2CF100441784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C7A6D961CCE334200441784 /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				1C7A6D671CCE2CF100441784 /* mid-course-project */,
-				1C7A6D7C1CCE2CF100441784 /* mid-course-projectTests */,
-				1C7A6D871CCE2CF100441784 /* mid-course-projectUITests */,
 				1C7A6D661CCE2CF100441784 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,24 +100,6 @@
 				1C7A6D961CCE334200441784 /* Calculator.swift */,
 			);
 			path = "mid-course-project";
-			sourceTree = "<group>";
-		};
-		1C7A6D7C1CCE2CF100441784 /* mid-course-projectTests */ = {
-			isa = PBXGroup;
-			children = (
-				1C7A6D7D1CCE2CF100441784 /* mid_course_projectTests.swift */,
-				1C7A6D7F1CCE2CF100441784 /* Info.plist */,
-			);
-			path = "mid-course-projectTests";
-			sourceTree = "<group>";
-		};
-		1C7A6D871CCE2CF100441784 /* mid-course-projectUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1C7A6D881CCE2CF100441784 /* mid_course_projectUITests.swift */,
-				1C7A6D8A1CCE2CF100441784 /* Info.plist */,
-			);
-			path = "mid-course-projectUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,7 +261,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C7A6D7E1CCE2CF100441784 /* mid_course_projectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C7A6D891CCE2CF100441784 /* mid_course_projectUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
