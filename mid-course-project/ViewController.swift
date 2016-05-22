@@ -66,6 +66,31 @@ class ViewController: UIViewController {
   }
 
   @IBAction func buttonDot(sender: AnyObject) {
+    display(myCalc.addDot())
+  }
+
+  @IBAction func buttonPosNeg(sender: AnyObject) {
+    display(myCalc.posNeg())
+  }
+
+  @IBAction func buttonPercent(sender: AnyObject) {
+    display(myCalc.percentage())
+  }
+
+  @IBAction func buttonMC(sender: UIButton) {
+    display(myCalc.clearMemory())
+  }
+
+  @IBAction func buttonMPlus(sender: AnyObject) {
+    display(myCalc.addMemory())
+  }
+
+  @IBAction func buttonMMinus(sender: AnyObject) {
+    display(myCalc.minusMemory())
+  }
+
+  @IBAction func buttonMRecall(sender: AnyObject) {
+    display(myCalc.recallMemory())
   }
 
   @IBAction func buttonPlus(sender: AnyObject) {
@@ -91,10 +116,6 @@ class ViewController: UIViewController {
   func display(textValue: String) {
     displayField.text = textValue
   }
-
-//  func display(doubleValue: Double) {
-//    displayField.text = String(doubleValue)
-//  }
 
   @IBAction func buttonClear(sender: AnyObject) {
     display(myCalc.clear())
